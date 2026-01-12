@@ -6,7 +6,7 @@ Built to simulate how AI systems can assist emergency operators in high-stakes, 
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 Natural disasters like tornadoes generate fragmented, noisy, and rapidly evolving signals across radar systems, social media, and emergency protocols. Human operators must synthesize this information under extreme time pressure.
 

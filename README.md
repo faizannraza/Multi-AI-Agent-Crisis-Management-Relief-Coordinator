@@ -1,4 +1,4 @@
-# 🚨 Multi-AI-Agent Crisis Management & Relief Coordinator
+# Multi-AI-Agent Crisis Management & Relief Coordinator
 
 An end-to-end multi-agent NLP + computer vision system for real-time tornado detection, situational awareness, and disaster response coordination, integrating radar data, social media signals, and official FEMA guidelines.
 
@@ -12,10 +12,10 @@ Natural disasters like tornadoes generate fragmented, noisy, and rapidly evolvin
 
 This project builds a modular, multi-agent AI pipeline that:
 
-- ✅ Detects tornado likelihood from NEXRAD radar data
-- ✅ Classifies crisis-related tweets in real time
-- ✅ Retrieves authoritative FEMA response guidelines via Retrieval-Augmented Generation (RAG)
-- ✅ Produces a structured, operator-ready response briefing
+- Detects tornado likelihood from NEXRAD radar data
+- Classifies crisis-related tweets in real time
+- Retrieves authoritative FEMA response guidelines via Retrieval-Augmented Generation (RAG)
+- Produces a structured, operator-ready response briefing
 
 ### The system is designed to be:
 - **Explainable**
@@ -25,7 +25,7 @@ This project builds a modular, multi-agent AI pipeline that:
 
 ---
 
-## 🧠 System Architecture (Multi-Agent Design)
+## System Architecture (Multi-Agent Design)
 
 ```
 ┌──────────────┐      ┌────────────────┐
@@ -69,17 +69,17 @@ This project builds a modular, multi-agent AI pipeline that:
   - Quality masks
 
 ### Key Techniques
-- ✅ **Focal Loss** (γ = 2.0) for rare event learning
-- ✅ **Positive class oversampling** + Tomek Links cleaning
-- ✅ **Time-aware cross-validation** (rolling / walk-forward)
-- ✅ **Threshold optimization** using F1 score (not accuracy)
+- **Focal Loss** (γ = 2.0) for rare event learning
+- **Positive class oversampling** + Tomek Links cleaning
+- **Time-aware cross-validation** (rolling / walk-forward)
+- **Threshold optimization** using F1 score (not accuracy)
 
 ### Why Not ResNet / EfficientNet?
 Radar imagery differs fundamentally from natural images — pretrained vision backbones showed no meaningful gain while adding computational cost. A custom CNN proved more stable and interpretable.
 
 ---
 
-## 🐦 Tweet Classification (NLP)
+## Tweet Classification (NLP)
 
 ### Task
 Classify tweets during tornado events into:
@@ -106,7 +106,7 @@ Classify tweets during tornado events into:
 
 ---
 
-## 📚 FEMA Guidelines → RAG Knowledge Base
+## FEMA Guidelines → RAG Knowledge Base
 
 ### Source
 ~11 official FEMA manuals (planning, response, logistics, communications)
@@ -130,7 +130,7 @@ Classify tweets during tornado events into:
 
 ---
 
-## 🤖 Agent Orchestration (LangGraph)
+## Agent Orchestration (LangGraph)
 
 Built using **LangGraph / Pregel**:
 - Conditional routing between agents
@@ -139,7 +139,7 @@ Built using **LangGraph / Pregel**:
 
 ---
 
-## 📊 Output Example (Operator Briefing)
+## Output Example (Operator Briefing)
 
 ```json
 {
@@ -161,7 +161,7 @@ Built using **LangGraph / Pregel**:
 
 ---
 
-## 🧪 Evaluation Highlights
+## Evaluation Highlights
 
 - **Radar model:** ROC-AUC ≈ 0.86 (rare-event classification)
 - **Tweet classifier:** >99% accuracy, Macro-F1 ≈ 0.99
@@ -170,11 +170,11 @@ Built using **LangGraph / Pregel**:
   - Precision controlled via threshold tuning
   - Time-aware validation to avoid data leakage
 
-> ⚠️ **Note:** Accuracy alone is misleading in disaster detection — recall, PR-AUC, and operational behavior matter far more.
+> **Note:** Accuracy alone is misleading in disaster detection — recall, PR-AUC, and operational behavior matter far more.
 
 ---
 
-## 🚀 Future Work
+## Future Work
 
 - [ ] Real-time ingestion (Kafka / Kinesis)
 - [ ] Geo-spatial dashboards for first responders
@@ -185,7 +185,7 @@ Built using **LangGraph / Pregel**:
 
 ---
 
-## 🧑‍💻 Tech Stack
+## Tech Stack
 
 | Category | Technologies |
 |----------|-------------|
@@ -198,7 +198,7 @@ Built using **LangGraph / Pregel**:
 
 ---
 
-## 👥 Authors
+## Authors
 
 **Muhammad Faizan Raza**
 MS Data Analytics, Penn State
@@ -207,16 +207,6 @@ AI / ML / NLP Researcher
 **Shuo (Luna) Yang**
 
 **Matthew Varghese**
-
----
-
-## 📄 License
-
-*Add your license information here*
-
-## 🤝 Contributing
-
-*Add contribution guidelines here*
 
 ---
 

@@ -1,0 +1,9 @@
+torch>=2.1
+transformers>=4.41
+peft
+faiss-cpu
+langchain>=0.2
+crewai==0.5.*
+fastapi uvicorn
+python-dotenv
+tqdm pandas pydantic
